@@ -1,0 +1,186 @@
+<html>
+    <head>
+
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;1,500&family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+<!--  icon on tap  -->
+<link rel="shortcut icon" href="images/web-icon.jpg" type="image/x-icon" />
+<!--  css -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/index_style.css">
+
+
+    </head>
+    <body >
+
+        <section>
+            <!-- Nav bar  -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="nav-logo d-flex">
+                        <img  class="img-fluid" src="images/logo@2x.png" alt="img-logo">
+
+                        <div class="d-flex flex-column mx-4">
+                            <a class="navbar-brand text-white fs-3 fw-bold" href="#">Weather</a>
+                            <span class=" text-white fst-italic">tagline goes here </span>
+                        </div>
+                    </div>
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon m-3"></span>
+                  </button>
+                  <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                    <div class="nav-btns d-flex w-100 justify-content-end">
+                        <div class="btn  btn-nav mx-3 rounded-5 px-5 "> Home</div>
+                        <div class="btn  btn-nav mx-3 rounded-5 px-5"> Contact</div>
+                    </div>
+
+
+
+                  </div>
+                </div>
+              </nav>
+
+              <!-- main weather  -->
+              <div class="city-img d-flex justify-content-center align-items-center  ">
+
+                <form class="find-location py-2 px-4 rounded-5 w-75 d-flex">
+                    <input  id="input-search" class="input-search w-100  text-white " type="text" placeholder="Find your location..." id="search">100
+                    <button  class="btn-search px-5 py-2 rounded-5" type="button" value="Find" id="submit"> Find</button>
+                </form>
+                
+
+
+
+              </div>
+              <div class="weather-content-container   ">
+                <div class="container ">
+                    <div class="row cards">
+                        <div class="card-1 card col-lg-4 col- p-4  shadow-lg ">
+                            <div class=" card-part-1 w-100 d-flex justify-content-between mb-5">
+                                <div id="today-day-number" class="day text-white fs-6">Tuesday</div>
+                                <div id="today-day-date-mounth" class="day text-white fs-6">16 January</div>
+
+                            </div>
+                            <div class=" card-part-2 w-100  ">
+                                <h6 id="city" class="city text-white">Cairo</h6>
+                                <div class="temp d-flex mb-5"> 
+                                    <div id="temp-c" class="w-75 p-3 fs-1 fw-bolder text-white">18<sup>o</sup>C</div>
+                                    <div  class="w-25 text-white "> <img id="temp-icon" class="img-fluid" alt="sunnyIcon"> </div>
+                                </div>
+                                <div id="temp-condition-name" class="temp-class text-white mb-2"> sunny </div>
+                                <div class="temp-details d-flex mb-2  ">
+                                    <div class="w25 text-white mx-2">
+                                        <img src="images/umberla- icon.png" alt="umberla-icon">
+                                        <span id="humidity">20%</span>
+                                     </div>
+                                    <div class="w25 text-white mx-2">
+                                        <img src="images/icon-wind@2x.png" alt="windy-icon">
+                                        <span id="wind-speed">18km/h</span>
+                                    </div>
+                                    <div class="w25 text-white mx-2">
+                                        <img src="images/icon-compass@2x.png" alt="compass-icon">
+                                        <span id="wind-direction" >East</span>
+                                    </div>
+
+                                </div>
+                                
+                                
+                    
+                            </div>
+                            
+                        </div>
+
+                        <div class="card-2 card col-lg-4 p-4   shadow-lg ">
+                            <div class=" card-part-1 w-100 d-flex justify-content-center align-content-center mb-5">
+                                <div class="nextDay-day text-white fs-6">Wednesday</div>
+
+
+                            </div>
+                            <div class=" card-part-2 w-100 mb-4 ">
+                                <div class=" text-white text-center"> <img class="Next-day-temp-icon img-fluid "  alt="sunnyIcon"> </div>
+                                <div class="temp text-center "> 
+                                    <div class="nextDay-max-temp p-3 fs-5 fw-bolder text-white text-center">21.3<sup>o</sup>C</div>
+                                    <div  class="nextDay-min-temp p-3 fs-5 fw-bolder text-white text-center">21.3<sup>o</sup>C</div>
+                                </div>
+                                <div class="nextday-condition text-white mb-3"> sunny </div>
+
+                                
+                                
+                    
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="card-3 card col-lg-4 p-4  shadow-lg ">
+                            <div class="day card-part-3 w-100 d-flex justify-content-center align-content-center mb-5">
+                                <div class="nextDay-day text-white fs-6">Thursday</div>
+
+
+                            </div>
+                            <div class=" card-part-2 w-100 mb-4 ">
+                                <div class=" text-white text-center"> <img class="Next-day-temp-icon"  class="img-fluid" alt="sunnyIcon"> </div>
+                                <div class=" text-center "> 
+                                    <div class="nextDay-max-temp p-3 fs-5 fw-bolder text-white text-center">21.3<sup>o</sup>C</div>
+                                    <div class="nextDay-min-temp p-3 fs-5 fw-bolder text-white text-center">21.3<sup>o</sup>C</div>
+                                </div>
+                                <div class="nextday-condition  text-white mb-3"> sunny </div>
+
+                                
+                                
+                    
+                            </div>
+                            
+                        </div>
+
+
+                    </div>
+                </div>
+
+              </div>
+
+
+
+
+
+        </section>
+
+        <footer class="py-3  mt-5">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center ">
+                    <div class="col-8 position-relative ">
+                        <input class=" ser form-control mt-5 rounded-pill" type="text "
+                            placeholder=" enter your email to subscribe">
+                        <button class="find  btn btn-info rounded-pill">subscribe</button>
+                    </div>
+                    <div class="col-3 ">
+                        <div class="media d-flex justify-content-evenly align-items-center pt-4">
+                            <a class="text-decoration-none" href=""><i class="fa-brands fs-3  fa-facebook"></i></a>
+                            <a class="text-decoration-none" href=""><i class="fa-brands fs-3 fa-linkedin"></i></a>
+                            <a class="text-decoration-none" href=""><i class="fa-brands fs-3 fa-instagram"></i></a>
+                            <a class="text-decoration-none" href=""><i class="fa-brands fs-3 fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p class="pt-3 text-center text-white">Copyright 2024 Havoc Prodution. mohamedibrahim. All rights reserved</p>
+        
+                </div>
+            </div>
+        
+        
+            </div>
+        
+        </footer>
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/mine.js"></script>
+
+    </body>
+</html>
